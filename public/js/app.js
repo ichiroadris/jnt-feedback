@@ -4255,12 +4255,34 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__.default,
     Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__.default
+  },
+  props: ["feedbacks"],
+  created: function created() {
+    console.log(this.feedbacks);
   }
 });
 
@@ -4277,7 +4299,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
 //
 //
 //
@@ -32940,14 +32961,53 @@ var render = function() {
     [
       _vm._v(" "),
       _c("div", { staticClass: "py-12" }, [
-        _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
-          _c(
-            "div",
-            { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
-            [_c("welcome")],
-            1
-          )
-        ])
+        _c(
+          "div",
+          {
+            staticClass:
+              "max-w-7xl mx-auto sm:px-6 lg:px-8 grid grid-cols-2 gap-4"
+          },
+          _vm._l(_vm.feedbacks, function(feedback, index) {
+            return _c(
+              "div",
+              { key: index, staticClass: "bg-white rounded-md shadow p-4" },
+              [
+                _c(
+                  "div",
+                  { staticClass: "flex text-yellow-400 mb-3" },
+                  _vm._l(feedback.star, function(index) {
+                    return _c(
+                      "svg",
+                      {
+                        key: index,
+                        staticClass: "w-6 h-6",
+                        attrs: {
+                          fill: "currentColor",
+                          viewBox: "0 0 20 20",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          }
+                        })
+                      ]
+                    )
+                  }),
+                  0
+                ),
+                _vm._v(" "),
+                _c("p", { staticClass: "text-lg" }, [
+                  _vm._v(_vm._s(feedback.comment))
+                ])
+              ]
+            )
+          }),
+          0
+        )
       ])
     ]
   )
@@ -33040,7 +33100,6 @@ var render = function() {
                 id: "",
                 cols: "30",
                 rows: "10",
-                required: "",
                 placeholder: "Enter comment"
               },
               domProps: { value: _vm.form.comment },

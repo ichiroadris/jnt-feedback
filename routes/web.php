@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FeedbackController;
+use App\Models\Feedback;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -29,5 +30,6 @@ Route::get('/', function () {
 Route::post('/feedback/create', [FeedbackController::class, 'create']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    $feedbacks = Feedback::all();
+    return Inertia::render('Dashboard', compact('feedbacks'));
 })->name('dashboard');
