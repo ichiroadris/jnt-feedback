@@ -3,10 +3,12 @@
         <div class="bg-white rounded-md shadow py-14 px-6 min-h-full">
             <div class="flex justify-end">
                 <div class="">
-                    <inertia-link href="/login" class="px-4 py-2 font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red"
+                    <inertia-link href="/dashboard" v-if="$page.props.user" class="px-4 py-2 font-bold leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red"
+                        >Dashboard</inertia-link
+                    >
+                    <inertia-link href="/login" v-else class="px-4 py-2 font-bold leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red"
                         >Login</inertia-link
                     >
-
                 </div>
             </div>
             <div class="flex justify-center my-16">
@@ -16,7 +18,7 @@
             </div>
             <div class="">
                 <form id="form">
-                    <button type="submit" class="px-4 py-2 mt-4 font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red">Submit</button>
+                    <button type="submit" class="px-8 py-4 mt-4 font-bold leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red">Submit</button>
                     <textarea name="" id="" cols="30" rows="10" class="mt-12 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="Enter comment"></textarea>
 
                     <fieldset class="stars">
