@@ -4338,6 +4338,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -5528,7 +5541,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#form[data-v-f2440f3c] {\n    display: flex;\n    flex-direction: column-reverse;\n    justify-content: center;\n    align-items: center;\n    max-width: 800px;\n    height: 100%;\n    margin: auto;\n}\n[class*=\"fontawesome-\"][data-v-f2440f3c]:before {\n    font-family: \"FontAwesome\", sans-serif;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    margin: auto;\n    width: 100%;\n    height: 100%;\n}\n.reset[data-v-f2440f3c] {\n    display: none;\n    position: absolute;\n    top: 100%;\n    left: 50%;\n    margin: auto;\n    padding: 12px 24px;\n    color: #4d4d4d;\n    background: #f0f0f0;\n    border-radius: 60px;\n    font-family: \"Helvetica\", sans-serif;\n    font-size: 18px;\n    font-weight: bold;\n    text-transform: uppercase;\n    cursor: pointer;\n    outline: none;\n    transform: translateX(-50%);\n}\n.reset[data-v-f2440f3c]:hover {\n    background: #fbc416;\n}\ninput[data-v-f2440f3c],\nlabel[data-v-f2440f3c] {\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\n.stars[data-v-f2440f3c] {\n    position: relative;\n}\n.stars input[data-v-f2440f3c] {\n    display: none;\n}\n.stars input:checked ~ label[data-v-f2440f3c]:not(.reset) {\n    -webkit-animation: wobble-data-v-f2440f3c 0.8s ease-out;\n    animation: wobble-data-v-f2440f3c 0.8s ease-out;\n    color: #fbc416;\n}\n.stars input:checked:not(#star-reset) ~ label.reset[data-v-f2440f3c] {\n    display: block;\n}\n.stars label[data-v-f2440f3c]:not(.reset) {\n    display: inline-block;\n    float: right;\n    position: relative;\n    width: 40px;\n    height: 40px;\n    font-size: 40px;\n    padding: 2px;\n    cursor: pointer;\n    color: #3d3d3d;\n    transition: color 0.1s ease-out;\n    z-index: 10;\n}\n.face[data-v-f2440f3c] {\n    position: relative;\n    width: 200px;\n    background: white;\n    border: 6px solid #f0f0f0;\n    border-radius: 100%;\n    margin: 80px 0 50px;\n    transition: box-shadow 0.4s ease-out;\n}\n.face[data-v-f2440f3c]:after {\n    content: \"\";\n    display: block;\n    padding-bottom: 100%;\n}\ni[data-v-f2440f3c] {\n    position: absolute;\n    top: 50%;\n    display: block;\n    width: 14px;\n    height: 14px;\n    border-radius: 100%;\n    background: #f0f0f0;\n}\ni[data-v-f2440f3c]:nth-child(1) {\n    left: 30%;\n}\ni[data-v-f2440f3c]:nth-child(2) {\n    right: 30%;\n}\nu[data-v-f2440f3c] {\n    position: absolute;\n    right: 0;\n    bottom: 25%;\n    left: 0;\n    margin: auto;\n    width: 24px;\n    height: 24px;\n    text-decoration: none;\n    border: 6px solid #f0f0f0;\n    border-radius: 100%;\n}\nu[data-v-f2440f3c]:before,\nu[data-v-f2440f3c]:after {\n    content: \"\";\n    position: absolute;\n    top: 15px;\n    width: 6px;\n    height: 6px;\n    background: #f0f0f0;\n    border-radius: 60px 60px 0 0;\n    z-index: 2;\n}\nu[data-v-f2440f3c]:before {\n    left: -5px;\n    transform: rotate(-32deg);\n}\nu[data-v-f2440f3c]:after {\n    right: -5px;\n    transform: rotate(32deg);\n}\nu .cover[data-v-f2440f3c] {\n    position: absolute;\n    top: -6px;\n    left: -6px;\n    width: 100%;\n    height: 100%;\n    border: 6px solid white;\n    background: white;\n    transform: translate(0, -12px);\n}\ninput#star4:checked ~ .face u[data-v-f2440f3c],\ninput#star2:checked ~ .face u[data-v-f2440f3c] {\n    width: 36px;\n}\ninput#star4:checked ~ .face u[data-v-f2440f3c]:before,\ninput#star4:checked ~ .face u[data-v-f2440f3c]:after,\ninput#star2:checked ~ .face u[data-v-f2440f3c]:before,\ninput#star2:checked ~ .face u[data-v-f2440f3c]:after {\n    top: 18px;\n    height: 10px;\n}\ninput#star4:checked ~ .face u[data-v-f2440f3c]:before,\ninput#star2:checked ~ .face u[data-v-f2440f3c]:before {\n    left: 0px;\n    transform: rotate(-66deg);\n}\ninput#star4:checked ~ .face u[data-v-f2440f3c]:after,\ninput#star2:checked ~ .face u[data-v-f2440f3c]:after {\n    right: 0px;\n    transform: rotate(66deg);\n}\ninput#star4:checked ~ .face u .cover[data-v-f2440f3c],\ninput#star2:checked ~ .face u .cover[data-v-f2440f3c] {\n    transform: translate(0, -8px);\n}\ninput#star5:checked ~ .face u[data-v-f2440f3c],\ninput#star4:checked ~ .face u[data-v-f2440f3c] {\n    transform: rotate(180deg) translateY(-20px);\n}\ninput#star3:checked ~ .face u[data-v-f2440f3c] {\n    width: 42px;\n    height: 6px;\n    background: #3d3d3d;\n    border: none;\n    border-radius: 60px;\n    transform: translateY(-4px);\n}\ninput#star3:checked ~ .face u[data-v-f2440f3c]:before,\ninput#star3:checked ~ .face u[data-v-f2440f3c]:after,\ninput#star3:checked ~ .face u .cover[data-v-f2440f3c] {\n    display: none;\n}\ninput:not(#star-reset):checked ~ .face[data-v-f2440f3c] {\n    -webkit-animation: wobble-data-v-f2440f3c 0.8s ease-out;\n    animation: wobble-data-v-f2440f3c 0.8s ease-out;\n}\ninput:not(#star-reset):checked ~ .face[data-v-f2440f3c],\ninput:not(#star-reset):checked ~ .face u[data-v-f2440f3c] {\n    border-color: #3d3d3d;\n}\ninput:not(#star-reset):checked ~ .face i[data-v-f2440f3c],\ninput:not(#star-reset):checked ~ .face u[data-v-f2440f3c]:before,\ninput:not(#star-reset):checked ~ .face u[data-v-f2440f3c]:after {\n    background: #3d3d3d;\n}\ninput#star5:checked ~ .face[data-v-f2440f3c] {\n    background-color: #fa5563;\n}\ninput#star5:checked ~ .face u .cover[data-v-f2440f3c] {\n    background: #fa5563;\n    border-color: #fa5563;\n}\ninput#star4:checked ~ .face[data-v-f2440f3c] {\n    background-color: #fa824e;\n}\ninput#star4:checked ~ .face u .cover[data-v-f2440f3c] {\n    background: #fa824e;\n    border-color: #fa824e;\n}\ninput#star3:checked ~ .face[data-v-f2440f3c] {\n    background-color: #fccd3f;\n}\ninput#star2:checked ~ .face[data-v-f2440f3c] {\n    background-color: #a0d77a;\n}\ninput#star2:checked ~ .face u .cover[data-v-f2440f3c] {\n    background: #a0d77a;\n    border-color: #a0d77a;\n}\ninput#star1:checked ~ .face[data-v-f2440f3c] {\n    background-color: #6bca6c;\n}\ninput#star1:checked ~ .face u .cover[data-v-f2440f3c] {\n    background: #6bca6c;\n    border-color: #6bca6c;\n}\n@-webkit-keyframes wobble-data-v-f2440f3c {\n0% {\n        transform: scale(0.8);\n}\n20% {\n        transform: scale(1.1);\n}\n40% {\n        transform: scale(0.9);\n}\n60% {\n        transform: scale(1.05);\n}\n80% {\n        transform: scale(0.96);\n}\n100% {\n        transform: scale(1);\n}\n}\n@keyframes wobble-data-v-f2440f3c {\n0% {\n        transform: scale(0.8);\n}\n20% {\n        transform: scale(1.1);\n}\n40% {\n        transform: scale(0.9);\n}\n60% {\n        transform: scale(1.05);\n}\n80% {\n        transform: scale(0.96);\n}\n100% {\n        transform: scale(1);\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#form[data-v-f2440f3c] {\n    display: flex;\n    flex-direction: column-reverse;\n    justify-content: center;\n    align-items: center;\n    max-width: 800px;\n    height: 100%;\n    margin: auto;\n}\n[class*=\"fontawesome-\"][data-v-f2440f3c]:before {\n    font-family: \"FontAwesome\", sans-serif;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    margin: auto;\n    width: 100%;\n    height: 100%;\n}\n.reset[data-v-f2440f3c] {\n    display: none;\n    position: absolute;\n    top: 90%;\n    left: 50%;\n    margin: auto;\n    padding: 12px 24px;\n    color: #4d4d4d;\n    background: #f0f0f0;\n    border-radius: 60px;\n    font-family: \"Helvetica\", sans-serif;\n    font-size: 18px;\n    font-weight: bold;\n    text-transform: uppercase;\n    cursor: pointer;\n    outline: none;\n    transform: translateX(-50%);\n}\n.reset[data-v-f2440f3c]:hover {\n    background: #fbc416;\n}\ninput[data-v-f2440f3c],\nlabel[data-v-f2440f3c] {\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\n.stars[data-v-f2440f3c] {\n    position: relative;\n}\n.stars input[data-v-f2440f3c] {\n    display: none;\n}\n.stars input:checked ~ label[data-v-f2440f3c]:not(.reset) {\n    -webkit-animation: wobble-data-v-f2440f3c 0.8s ease-out;\n    animation: wobble-data-v-f2440f3c 0.8s ease-out;\n    color: #fbc416;\n}\n.stars input:checked:not(#star-reset) ~ label.reset[data-v-f2440f3c] {\n    display: block;\n}\n.stars label[data-v-f2440f3c]:not(.reset) {\n    display: inline-block;\n    float: right;\n    position: relative;\n    width: 40px;\n    height: 40px;\n    font-size: 40px;\n    padding: 2px;\n    cursor: pointer;\n    color: #3d3d3d;\n    transition: color 0.1s ease-out;\n    z-index: 10;\n}\n.face[data-v-f2440f3c] {\n    position: relative;\n    width: 200px;\n    background: white;\n    border: 6px solid #f0f0f0;\n    border-radius: 100%;\n    margin: 80px 0 50px;\n    transition: box-shadow 0.4s ease-out;\n}\n.face[data-v-f2440f3c]:after {\n    content: \"\";\n    display: block;\n    padding-bottom: 100%;\n}\ni[data-v-f2440f3c] {\n    position: absolute;\n    top: 50%;\n    display: block;\n    width: 14px;\n    height: 14px;\n    border-radius: 100%;\n    background: #f0f0f0;\n}\ni[data-v-f2440f3c]:nth-child(1) {\n    left: 30%;\n}\ni[data-v-f2440f3c]:nth-child(2) {\n    right: 30%;\n}\nu[data-v-f2440f3c] {\n    position: absolute;\n    right: 0;\n    bottom: 25%;\n    left: 0;\n    margin: auto;\n    width: 24px;\n    height: 24px;\n    text-decoration: none;\n    border: 6px solid #f0f0f0;\n    border-radius: 100%;\n}\nu[data-v-f2440f3c]:before,\nu[data-v-f2440f3c]:after {\n    content: \"\";\n    position: absolute;\n    top: 15px;\n    width: 6px;\n    height: 6px;\n    background: #f0f0f0;\n    border-radius: 60px 60px 0 0;\n    z-index: 2;\n}\nu[data-v-f2440f3c]:before {\n    left: -5px;\n    transform: rotate(-32deg);\n}\nu[data-v-f2440f3c]:after {\n    right: -5px;\n    transform: rotate(32deg);\n}\nu .cover[data-v-f2440f3c] {\n    position: absolute;\n    top: -6px;\n    left: -6px;\n    width: 100%;\n    height: 100%;\n    border: 6px solid white;\n    background: white;\n    transform: translate(0, -12px);\n}\ninput#star4:checked ~ .face u[data-v-f2440f3c],\ninput#star2:checked ~ .face u[data-v-f2440f3c] {\n    width: 36px;\n}\ninput#star4:checked ~ .face u[data-v-f2440f3c]:before,\ninput#star4:checked ~ .face u[data-v-f2440f3c]:after,\ninput#star2:checked ~ .face u[data-v-f2440f3c]:before,\ninput#star2:checked ~ .face u[data-v-f2440f3c]:after {\n    top: 18px;\n    height: 10px;\n}\ninput#star4:checked ~ .face u[data-v-f2440f3c]:before,\ninput#star2:checked ~ .face u[data-v-f2440f3c]:before {\n    left: 0px;\n    transform: rotate(-66deg);\n}\ninput#star4:checked ~ .face u[data-v-f2440f3c]:after,\ninput#star2:checked ~ .face u[data-v-f2440f3c]:after {\n    right: 0px;\n    transform: rotate(66deg);\n}\ninput#star4:checked ~ .face u .cover[data-v-f2440f3c],\ninput#star2:checked ~ .face u .cover[data-v-f2440f3c] {\n    transform: translate(0, -8px);\n}\ninput#star5:checked ~ .face u[data-v-f2440f3c],\ninput#star4:checked ~ .face u[data-v-f2440f3c] {\n    transform: rotate(180deg) translateY(-20px);\n}\ninput#star3:checked ~ .face u[data-v-f2440f3c] {\n    width: 42px;\n    height: 6px;\n    background: #3d3d3d;\n    border: none;\n    border-radius: 60px;\n    transform: translateY(-4px);\n}\ninput#star3:checked ~ .face u[data-v-f2440f3c]:before,\ninput#star3:checked ~ .face u[data-v-f2440f3c]:after,\ninput#star3:checked ~ .face u .cover[data-v-f2440f3c] {\n    display: none;\n}\ninput:not(#star-reset):checked ~ .face[data-v-f2440f3c] {\n    -webkit-animation: wobble-data-v-f2440f3c 0.8s ease-out;\n    animation: wobble-data-v-f2440f3c 0.8s ease-out;\n}\ninput:not(#star-reset):checked ~ .face[data-v-f2440f3c],\ninput:not(#star-reset):checked ~ .face u[data-v-f2440f3c] {\n    border-color: #3d3d3d;\n}\ninput:not(#star-reset):checked ~ .face i[data-v-f2440f3c],\ninput:not(#star-reset):checked ~ .face u[data-v-f2440f3c]:before,\ninput:not(#star-reset):checked ~ .face u[data-v-f2440f3c]:after {\n    background: #3d3d3d;\n}\ninput#star5:checked ~ .face[data-v-f2440f3c] {\n    background-color: #fa5563;\n}\ninput#star5:checked ~ .face u .cover[data-v-f2440f3c] {\n    background: #fa5563;\n    border-color: #fa5563;\n}\ninput#star4:checked ~ .face[data-v-f2440f3c] {\n    background-color: #fa824e;\n}\ninput#star4:checked ~ .face u .cover[data-v-f2440f3c] {\n    background: #fa824e;\n    border-color: #fa824e;\n}\ninput#star3:checked ~ .face[data-v-f2440f3c] {\n    background-color: #fccd3f;\n}\ninput#star2:checked ~ .face[data-v-f2440f3c] {\n    background-color: #a0d77a;\n}\ninput#star2:checked ~ .face u .cover[data-v-f2440f3c] {\n    background: #a0d77a;\n    border-color: #a0d77a;\n}\ninput#star1:checked ~ .face[data-v-f2440f3c] {\n    background-color: #6bca6c;\n}\ninput#star1:checked ~ .face u .cover[data-v-f2440f3c] {\n    background: #6bca6c;\n    border-color: #6bca6c;\n}\n@-webkit-keyframes wobble-data-v-f2440f3c {\n0% {\n        transform: scale(0.8);\n}\n20% {\n        transform: scale(1.1);\n}\n40% {\n        transform: scale(0.9);\n}\n60% {\n        transform: scale(1.05);\n}\n80% {\n        transform: scale(0.96);\n}\n100% {\n        transform: scale(1);\n}\n}\n@keyframes wobble-data-v-f2440f3c {\n0% {\n        transform: scale(0.8);\n}\n20% {\n        transform: scale(1.1);\n}\n40% {\n        transform: scale(0.9);\n}\n60% {\n        transform: scale(1.05);\n}\n80% {\n        transform: scale(0.96);\n}\n100% {\n        transform: scale(1);\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -32994,123 +33007,155 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "min-h-screen bg-red-100 p-7" }, [
+    _c(
+      "div",
+      { staticClass: "bg-white rounded-md shadow py-14 px-6 min-h-full" },
+      [
+        _c("div", { staticClass: "flex justify-end" }, [
+          _c(
+            "div",
+            {},
+            [
+              _c(
+                "inertia-link",
+                {
+                  staticClass:
+                    "px-4 py-2 font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red",
+                  attrs: { href: "/login" }
+                },
+                [_vm._v("Login")]
+              )
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1)
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "max-w-7xl mx-auto my-20" }, [
-      _c("div", { staticClass: "flex flex-col items-center" }, [
+    return _c("div", { staticClass: "flex justify-center my-16" }, [
+      _c(
+        "a",
+        {
+          staticClass: "self-center",
+          attrs: { href: "https://www.jtexpress.my/" }
+        },
+        [
+          _c("img", {
+            staticClass: "w-96",
+            attrs: { src: "/img/jnt-logo.png", alt: "" }
+          })
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", {}, [
+      _c("form", { attrs: { id: "form" } }, [
         _c(
-          "a",
+          "button",
           {
-            staticClass: "mb-40",
-            attrs: { href: "https://www.jtexpress.my/" }
+            staticClass:
+              "px-4 py-2 mt-4 font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red",
+            attrs: { type: "submit" }
           },
-          [
-            _c("img", {
-              staticClass: "w-96",
-              attrs: { src: "/img/jnt-logo.png", alt: "" }
-            })
-          ]
+          [_vm._v("Submit")]
         ),
         _vm._v(" "),
-        _c("div", [
-          _c("form", { attrs: { id: "form" } }, [
-            _c("textarea", {
-              attrs: { name: "", id: "", cols: "30", rows: "10" }
-            }),
+        _c("textarea", {
+          staticClass:
+            "mt-12 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
+          attrs: {
+            name: "",
+            id: "",
+            cols: "30",
+            rows: "10",
+            placeholder: "Enter comment"
+          }
+        }),
+        _vm._v(" "),
+        _c("fieldset", { staticClass: "stars" }, [
+          _c("input", {
+            attrs: {
+              type: "radio",
+              name: "stars",
+              id: "star1",
+              ontouchstart: "ontouchstart"
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { staticClass: "fa fa-star", attrs: { for: "star1" } }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: {
+              type: "radio",
+              name: "stars",
+              id: "star2",
+              ontouchstart: "ontouchstart"
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { staticClass: "fa fa-star", attrs: { for: "star2" } }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: {
+              type: "radio",
+              name: "stars",
+              id: "star3",
+              ontouchstart: "ontouchstart"
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { staticClass: "fa fa-star", attrs: { for: "star3" } }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: {
+              type: "radio",
+              name: "stars",
+              id: "star4",
+              ontouchstart: "ontouchstart"
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { staticClass: "fa fa-star", attrs: { for: "star4" } }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: {
+              type: "radio",
+              name: "stars",
+              id: "star5",
+              ontouchstart: "ontouchstart"
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { staticClass: "fa fa-star", attrs: { for: "star5" } }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: { type: "radio", name: "stars", id: "star-reset" }
+          }),
+          _vm._v(" "),
+          _c("label", { staticClass: "reset", attrs: { for: "star-reset" } }, [
+            _vm._v("reset")
+          ]),
+          _vm._v(" "),
+          _c("figure", { staticClass: "face" }, [
+            _c("i"),
+            _c("i"),
             _vm._v(" "),
-            _c("fieldset", { staticClass: "stars" }, [
-              _c("input", {
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  id: "star1",
-                  ontouchstart: "ontouchstart"
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star1" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  id: "star2",
-                  ontouchstart: "ontouchstart"
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star2" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  id: "star3",
-                  ontouchstart: "ontouchstart"
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star3" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  id: "star4",
-                  ontouchstart: "ontouchstart"
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star4" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  id: "star5",
-                  ontouchstart: "ontouchstart"
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star5" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "radio", name: "stars", id: "star-reset" }
-              }),
-              _vm._v(" "),
-              _c(
-                "label",
-                { staticClass: "reset", attrs: { for: "star-reset" } },
-                [_vm._v("reset")]
-              ),
-              _vm._v(" "),
-              _c("figure", { staticClass: "face" }, [
-                _c("i"),
-                _c("i"),
-                _vm._v(" "),
-                _c("u", [_c("div", { staticClass: "cover" })])
-              ])
-            ])
+            _c("u", [_c("div", { staticClass: "cover" })])
           ])
         ])
       ])

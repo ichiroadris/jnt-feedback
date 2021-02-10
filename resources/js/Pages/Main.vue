@@ -1,12 +1,23 @@
 <template>
-    <div class="max-w-7xl mx-auto my-20">
-        <div class="flex flex-col items-center">
-            <a href="https://www.jtexpress.my/" class="mb-40"
-                ><img src="/img/jnt-logo.png" alt="" class="w-96"
-            /></a>
-            <div>
+    <div class="min-h-screen bg-red-100 p-7">
+        <div class="bg-white rounded-md shadow py-14 px-6 min-h-full">
+            <div class="flex justify-end">
+                <div class="">
+                    <inertia-link href="/login" class="px-4 py-2 font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red"
+                        >Login</inertia-link
+                    >
+
+                </div>
+            </div>
+            <div class="flex justify-center my-16">
+                <a href="https://www.jtexpress.my/" class="self-center"
+                    ><img src="/img/jnt-logo.png" alt="" class="w-96"
+                /></a>
+            </div>
+            <div class="">
                 <form id="form">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button type="submit" class="px-4 py-2 mt-4 font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red">Submit</button>
+                    <textarea name="" id="" cols="30" rows="10" class="mt-12 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="Enter comment"></textarea>
 
                     <fieldset class="stars">
                         <input
@@ -53,6 +64,8 @@
                             </u>
                         </figure>
                     </fieldset>
+
+
                 </form>
             </div>
         </div>
@@ -87,7 +100,7 @@ export default {};
 .reset {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 50%;
     margin: auto;
     padding: 12px 24px;
