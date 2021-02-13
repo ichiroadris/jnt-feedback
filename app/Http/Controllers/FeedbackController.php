@@ -10,20 +10,20 @@ class FeedbackController extends Controller
 {
     public function create(Request $req)
     {
-        ray('sdfdf');
+        // ray('sdfdf');
 
         // $validated = $req->validated([
         //     'star',
         //     'comment'
         // ]);
 
-        ray($req->input('star'));
+        // ray($req->input('star'));
 
         Feedback::create([
             'star' => $req->input('star'),
             'comment' => $req->input('comment')
         ]);
 
-        return back();
+        return redirect()->back();
     }
 }

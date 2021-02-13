@@ -4404,6 +4404,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -4416,11 +4419,18 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     submit: function submit() {
       if (this.form.star && this.form.comment) {
-        this.$inertia.post("/feedback/create", this.form);
-        this.form.reset();
+        // this.$inertia.post("/feedback/create", this.form);
+        // this.form.reset();
+        var res = this.form.post('/feedback/create', {
+          resetOnSuccess: false
+        });
+        console.log(this.form);
       }
     }
-  }
+  } // created() {
+  //     console.log(this.form);
+  // }
+
 });
 
 /***/ }),
@@ -33273,7 +33283,11 @@ var render = function() {
               _vm._m(1)
             ])
           ])
-        ])
+        ]),
+        _vm._v(" "),
+        _vm.form.recentlySuccessful
+          ? _c("div", [_vm._v("\n            sdfsdfsdf\n        ")])
+          : _vm._e()
       ]
     )
   ])

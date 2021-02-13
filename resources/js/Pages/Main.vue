@@ -99,6 +99,9 @@
                     </fieldset>
                 </form>
             </div>
+            <div v-if="form.recentlySuccessful">
+                sdfsdfsdf
+            </div>
         </div>
     </div>
 </template>
@@ -116,11 +119,18 @@ export default {
     methods: {
         submit() {
             if (this.form.star && this.form.comment) {
-                this.$inertia.post("/feedback/create", this.form);
-                this.form.reset();
+                // this.$inertia.post("/feedback/create", this.form);
+                // this.form.reset();
+                let res = this.form.post('/feedback/create', {
+                    resetOnSuccess:false
+                })
+                console.log(this.form)
             }
         }
-    }
+    },
+    // created() {
+    //     console.log(this.form);
+    // }
 };
 </script>
 
