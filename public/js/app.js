@@ -4421,16 +4421,14 @@ __webpack_require__.r(__webpack_exports__);
       if (this.form.star && this.form.comment) {
         // this.$inertia.post("/feedback/create", this.form);
         // this.form.reset();
-        var res = this.form.post('/feedback/create', {
-          resetOnSuccess: false
-        });
-        console.log(this.form);
+        this.form.post('/feedback/create');
+        this.form.reset();
       }
     }
-  } // created() {
-  //     console.log(this.form);
-  // }
-
+  },
+  created: function created() {
+    console.log(this.$page);
+  }
 });
 
 /***/ }),
@@ -33082,211 +33080,228 @@ var render = function() {
         _vm._m(0),
         _vm._v(" "),
         _c("div", {}, [
-          _c("form", { attrs: { id: "form" } }, [
-            _c(
-              "button",
-              {
-                staticClass:
-                  "px-8 py-4 mt-4 font-bold leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red",
-                attrs: { type: "submit" },
-                on: { click: _vm.submit }
-              },
-              [_vm._v("\n                    Submit\n                ")]
-            ),
-            _vm._v(" "),
-            _c("textarea", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.form.comment,
-                  expression: "form.comment"
-                }
-              ],
-              staticClass:
-                "mt-12 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
-              attrs: {
-                name: "",
-                id: "",
-                cols: "30",
-                rows: "10",
-                placeholder: "Enter comment"
-              },
-              domProps: { value: _vm.form.comment },
+          _c(
+            "form",
+            {
+              attrs: { id: "form" },
               on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.form, "comment", $event.target.value)
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.submit($event)
                 }
               }
-            }),
-            _vm._v(" "),
-            _c("fieldset", { staticClass: "stars" }, [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.star,
-                    expression: "form.star"
-                  }
-                ],
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  value: "1",
-                  id: "star1",
-                  ontouchstart: "ontouchstart"
-                },
-                domProps: { checked: _vm._q(_vm.form.star, "1") },
-                on: {
-                  change: function($event) {
-                    return _vm.$set(_vm.form, "star", "1")
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star1" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.star,
-                    expression: "form.star"
-                  }
-                ],
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  required: "",
-                  value: "2",
-                  id: "star2",
-                  ontouchstart: "ontouchstart"
-                },
-                domProps: { checked: _vm._q(_vm.form.star, "2") },
-                on: {
-                  change: function($event) {
-                    return _vm.$set(_vm.form, "star", "2")
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star2" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.star,
-                    expression: "form.star"
-                  }
-                ],
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  value: "3",
-                  id: "star3",
-                  ontouchstart: "ontouchstart"
-                },
-                domProps: { checked: _vm._q(_vm.form.star, "3") },
-                on: {
-                  change: function($event) {
-                    return _vm.$set(_vm.form, "star", "3")
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star3" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.star,
-                    expression: "form.star"
-                  }
-                ],
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  value: "4",
-                  id: "star4",
-                  ontouchstart: "ontouchstart"
-                },
-                domProps: { checked: _vm._q(_vm.form.star, "4") },
-                on: {
-                  change: function($event) {
-                    return _vm.$set(_vm.form, "star", "4")
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star4" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.star,
-                    expression: "form.star"
-                  }
-                ],
-                attrs: {
-                  type: "radio",
-                  name: "stars",
-                  value: "5",
-                  id: "star5",
-                  ontouchstart: "ontouchstart"
-                },
-                domProps: { checked: _vm._q(_vm.form.star, "5") },
-                on: {
-                  change: function($event) {
-                    return _vm.$set(_vm.form, "star", "5")
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("label", {
-                staticClass: "fa fa-star",
-                attrs: { for: "star5" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "radio", name: "stars", id: "star-reset" }
-              }),
-              _vm._v(" "),
+            },
+            [
               _c(
-                "label",
-                { staticClass: "reset", attrs: { for: "star-reset" } },
-                [_vm._v("reset")]
+                "button",
+                {
+                  staticClass:
+                    "px-8 py-4 mt-4 font-bold leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red",
+                  on: { click: _vm.submit }
+                },
+                [_vm._v("\n                    Submit\n                ")]
               ),
               _vm._v(" "),
-              _vm._m(1)
-            ])
-          ])
+              _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.form.comment,
+                    expression: "form.comment"
+                  }
+                ],
+                staticClass:
+                  "mt-12 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
+                attrs: {
+                  name: "",
+                  id: "",
+                  cols: "30",
+                  rows: "10",
+                  placeholder: "Enter comment"
+                },
+                domProps: { value: _vm.form.comment },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.form, "comment", $event.target.value)
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("fieldset", { staticClass: "stars" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.star,
+                      expression: "form.star"
+                    }
+                  ],
+                  attrs: {
+                    type: "radio",
+                    name: "stars",
+                    value: "1",
+                    id: "star1",
+                    ontouchstart: "ontouchstart"
+                  },
+                  domProps: { checked: _vm._q(_vm.form.star, "1") },
+                  on: {
+                    change: function($event) {
+                      return _vm.$set(_vm.form, "star", "1")
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("label", {
+                  staticClass: "fa fa-star",
+                  attrs: { for: "star1" }
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.star,
+                      expression: "form.star"
+                    }
+                  ],
+                  attrs: {
+                    type: "radio",
+                    name: "stars",
+                    required: "",
+                    value: "2",
+                    id: "star2",
+                    ontouchstart: "ontouchstart"
+                  },
+                  domProps: { checked: _vm._q(_vm.form.star, "2") },
+                  on: {
+                    change: function($event) {
+                      return _vm.$set(_vm.form, "star", "2")
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("label", {
+                  staticClass: "fa fa-star",
+                  attrs: { for: "star2" }
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.star,
+                      expression: "form.star"
+                    }
+                  ],
+                  attrs: {
+                    type: "radio",
+                    name: "stars",
+                    value: "3",
+                    id: "star3",
+                    ontouchstart: "ontouchstart"
+                  },
+                  domProps: { checked: _vm._q(_vm.form.star, "3") },
+                  on: {
+                    change: function($event) {
+                      return _vm.$set(_vm.form, "star", "3")
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("label", {
+                  staticClass: "fa fa-star",
+                  attrs: { for: "star3" }
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.star,
+                      expression: "form.star"
+                    }
+                  ],
+                  attrs: {
+                    type: "radio",
+                    name: "stars",
+                    value: "4",
+                    id: "star4",
+                    ontouchstart: "ontouchstart"
+                  },
+                  domProps: { checked: _vm._q(_vm.form.star, "4") },
+                  on: {
+                    change: function($event) {
+                      return _vm.$set(_vm.form, "star", "4")
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("label", {
+                  staticClass: "fa fa-star",
+                  attrs: { for: "star4" }
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.star,
+                      expression: "form.star"
+                    }
+                  ],
+                  attrs: {
+                    type: "radio",
+                    name: "stars",
+                    value: "5",
+                    id: "star5",
+                    ontouchstart: "ontouchstart"
+                  },
+                  domProps: { checked: _vm._q(_vm.form.star, "5") },
+                  on: {
+                    change: function($event) {
+                      return _vm.$set(_vm.form, "star", "5")
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("label", {
+                  staticClass: "fa fa-star",
+                  attrs: { for: "star5" }
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  attrs: { type: "radio", name: "stars", id: "star-reset" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  { staticClass: "reset", attrs: { for: "star-reset" } },
+                  [_vm._v("reset")]
+                ),
+                _vm._v(" "),
+                _vm._m(1)
+              ])
+            ]
+          )
         ]),
         _vm._v(" "),
-        _vm.form.recentlySuccessful
-          ? _c("div", [_vm._v("\n            sdfsdfsdf\n        ")])
+        _vm.$page.props.flash.message
+          ? _c("div", [
+              _vm._v(
+                "\n            " +
+                  _vm._s(_vm.$page.props.flash.message) +
+                  "\n        "
+              )
+            ])
           : _vm._e()
       ]
     )

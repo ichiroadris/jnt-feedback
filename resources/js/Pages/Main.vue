@@ -23,9 +23,9 @@
                 /></a>
             </div>
             <div class="">
-                <form id="form">
+                <form id="form" @submit.prevent="submit">
                     <button
-                        type="submit"
+
                         @click="submit"
                         class="px-8 py-4 mt-4 font-bold leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red"
                     >
@@ -99,8 +99,8 @@
                     </fieldset>
                 </form>
             </div>
-            <div v-if="form.recentlySuccessful">
-                sdfsdfsdf
+            <div v-if="$page.props.flash.message">
+                {{ $page.props.flash.message }}
             </div>
         </div>
     </div>
@@ -121,16 +121,14 @@ export default {
             if (this.form.star && this.form.comment) {
                 // this.$inertia.post("/feedback/create", this.form);
                 // this.form.reset();
-                let res = this.form.post('/feedback/create', {
-                    resetOnSuccess:false
-                })
-                console.log(this.form)
+                this.form.post('/feedback/create',)
+                this.form.reset()
             }
         }
     },
-    // created() {
-    //     console.log(this.form);
-    // }
+    created() {
+        console.log(this.$page);
+    }
 };
 </script>
 
