@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen bg-red-100 p-7">
-        <div class="bg-white rounded-md shadow py-14 px-6 min-h-full">
+        <div class="bg-white rounded-md shadow py-14 px-6 min-h-full relative">
             <div class="flex justify-end">
                 <div class="">
                     <inertia-link
@@ -25,7 +25,6 @@
             <div class="">
                 <form id="form" @submit.prevent="submit">
                     <button
-
                         @click="submit"
                         class="px-8 py-4 mt-4 font-bold leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red"
                     >
@@ -99,8 +98,35 @@
                     </fieldset>
                 </form>
             </div>
-            <div v-if="$page.props.flash.message">
-                {{ $page.props.flash.message }}
+            <div
+                class="bg-green-100 border-t-4 border-green-500 rounded-b text-green-900 px-4 py-3 shadow-md absolute right-2 bottom-3"
+                role="alert"
+                v-if="form.recentlySuccessful"
+            >
+                <div class="flex">
+                    <div class="py-1">
+                        <svg
+                            class="fill-current h-6 w-6 text-green-500 mr-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+                            ></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-bold">Feedback submitted</p>
+                        <p class="text-sm">
+                            {{ $page.props.flash.message }}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -121,8 +147,8 @@ export default {
             if (this.form.star && this.form.comment) {
                 // this.$inertia.post("/feedback/create", this.form);
                 // this.form.reset();
-                this.form.post('/feedback/create',)
-                this.form.reset()
+                this.form.post("/feedback/create");
+                this.form.reset();
             }
         }
     },
